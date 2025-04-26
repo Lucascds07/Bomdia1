@@ -3,65 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-    
-    </title>
+    <title>Contadores Independentes</title>
     <style>
-        body{
-            text-align: center;
-        
+        body {
+            text-align: left;
+        }
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        .um {
+            background-color: aquamarine;
+        }
+        .dois {
+            background-color: burlywood;
+        }
+        .tres {
+            background-color: lightcoral;
+        }
+        .quatro {
+            background-color: lightseagreen;
+        }
+        .cinco {
+            background-color: lightsalmon;
+        }
+        .seis {
+            background-color: lightsteelblue;
+        }
+        .sete {
+            background-color: lightpink;
+        }
+        .oito {
+            background-color: lightgreen;
+        }
+        .nove {
+            background-color: lightgoldenrodyellow;
+        }
+        .dez {
+            background-color: plum;
         }
     </style>
 </head>
 <body>
-<h1>Contador</h1>
-<p>0</p>
-<button onclick="mais()">Mais 1
-</button>
-<button onclick="menos()">Menos 1
-</button><br>
-<button onclick="mais10()">Mais 10</button>
-</button>
-<button onclick="menos10()">Menos 10</button>
-</button><br>
-<button onclick="mais100()">Mais 100</button>
-<button onclick="menos100()">Menos 100</button>
-<script>
-    var numero = 0;
-        function mais(){
-            numero ++
-            document.querySelector('p').innerText = numero
-            mostrar()
+
+    <div class="um">
+        <h1>Contador 1</h1>
+        <p id="a1">0</p>
+        <button onclick="mais1()">Mais 1</button>
+        <button onclick="menos1()">Menos 1</button><br>
+        <button onclick="mais10_1()">Mais 10</button>
+        <button onclick="menos10_1()">Menos 10</button><br>
+        <button onclick="mais100_1()">Mais 100</button>
+        <button onclick="menos100_1()">Menos 100</button>
+    </div>
+
+    <div class="dois">
+        <h1>Contador 2</h1>
+        <p id="a2">0</p>
+        <button onclick="mais2()">Mais 1</button>
+        <button onclick="menos2()">Menos 1</button><br>
+        <button onclick="mais10_2()">Mais 10</button>
+        <button onclick="menos10_2()">Menos 10</button><br>
+        <button onclick="mais100_2()">Mais 100</button>
+        <button onclick="menos100_2()">Menos 100</button>
+    </div>
+
+    <div class="tres">
+        <h1>Contador 3</h1>
+        <p id="a3">0</p>
+        <button onclick="mais3()">Mais 1</button>
+        <button onclick="menos3()">Menos 1</button><br>
+        <button onclick="mais10_3()">Mais 10</button>
+        <button onclick="menos10_3()">Menos 10</button><br>
+        <button onclick="mais100_3()">Mais 100</button>
+        <button onclick="menos100_3()">Menos 100</button>
+    </div>
+
+    <div class="quatro">
+        <h1>Contador 4</h1>
+        <p id="a4">0</p>
+        <button onclick="mais4()">Mais 1</button>
+        <button onclick="menos4()">Menos 1</button><br>
+        <button onclick="mais10_4()">Mais 10</button>
+        <button onclick="menos10_4()">Menos 10</button><br>
+        <button onclick="mais100_4()">Mais 100</button>
+        <button onclick="menos100_4()">Menos 100</button>
+    </div>
+
+    <div class="cinco">
+        <h1>Contador 5</h1>
+        <p id="a5">0</p>
+        <button onclick="mais5()">Mais 1</button>
+        <button onclick="menos5()">Menos 1</button><br>
+        <button onclick="mais10_5()">Mais 10</button>
+        <button onclick="menos10_5()">Menos 10</button><br>
+        <button onclick="mais100_5()">Mais 100</button>
+        <button onclick="menos100_5()">Menos 100</button>
+    </div>
+
+    <div class="seis">
+        <h1>Contador 6</h1>
+        <p id="a6">0</p>
+        <button onclick="mais6()">Mais 1</button>
+        <button onclick="menos6()">Menos 1</button><br>
+        <button onclick="mais10_6()">Mais 10</button>
+        <button onclick="menos10_6()">Menos 10</button><br>
+        <button onclick="mais100_6()">Mais 100</button>
+        <button onclick="menos100_6()">Menos 100</button>
+    </div>
+
+    <div class="sete">
+        <h1>Contador 7</h1>
+        <p id="a7">0</p>
+        <button onclick="mais7()">Mais 1</button>
+        <button onclick="menos7()">Menos 1</button><br>
+        <button onclick="mais10_7()">Mais 10</button>
+        <button onclick="menos10_7()">Menos 10</button><br>
+        <button onclick="mais100_7()">Mais 100</button>
+        <button onclick="menos100_7()">Menos 100</button>
+    </div>
+
+    <div class="oito">
+        <h1>Contador 8</h1>
+        <p id="a8">0</p>
+        <button onclick="mais8()">Mais 1</button>
+        <button onclick="menos8()">Menos 1</button><br>
+        <button onclick="mais10_8()">Mais 10</button>
+        <button onclick="menos10_8()">Menos 10</button><br>
+        <button onclick="mais100_8()">Mais 100</button>
+        <button onclick="menos100_8()">Menos 100</button>
+    </div>
+
+    <div class="nove">
+        <h1>Contador 9</h1>
+        <p id="a9">0</p>
+        <button onclick="mais9()">Mais 1</button>
+        <button onclick="menos9()">Menos 1</button><br>
+        <button onclick="mais10_9()">Mais 10</button>
+        <button onclick="menos10_9()">Menos 10</button><br>
+        <button onclick="mais100_9()">Mais 100</button>
+        <button onclick="menos100_9()">Menos 100</button>
+    </div>
+
+    <div class="dez">
+        <h1>Contador 10</h1>
+        <p id="a10">0</p>
+        <button onclick="mais10()">Mais 1</button>
+        <button onclick="menos10()">Menos 1</button><br>
+        <button onclick="mais10_10()">Mais 10</button>
+        <button onclick="menos10_10()">Menos 10</button><br>
+        <button onclick="mais100_10()">Mais 100</button>
+        <button onclick="menos100_10()">Menos 100</button>
+    </div>
+
+    <script>
+        var numero1 = 0;
+        var numero2 = 0;
+        var numero3 = 0;
+        var numero4 = 0;
+        var numero5 = 0;
+        var numero6 = 0;
+        var numero7 = 0;
+        var numero8 = 0;
+        var numero9 = 0;
+        var numero10 = 0;
+
+        function mais1() {
+            numero1++;
+            mostrar1();
         }
-        function menos(){
-            numero --
-            document.querySelector('p').innerText = numero
-            mostrar()
+        function menos1() {
+            numero1--;
+            mostrar1();
         }
-        function mostrar(){
-           document.querySelector('p').innerText = numero
+        function mais10_1() {
+            numero1 += 10;
+            mostrar1();
         }
-        function mais10(){
-            numero = numero + 10
-            document.querySelector('p').innerText = numero
-            mostrar()
+        function menos10_1() {
+            numero1 -= 10;
+            mostrar1();
         }
-        function menos10(){
-            numero = numero - 10
-            document.querySelector('p').innerText = numero
-            mostrar()
+        function mais100_1() {
+            numero1 += 100;
+            mostrar1();
         }
-        function mais100(){
-            numero = numero + 100
-            document.querySelector('p').innerText = numero
-            mostrar()
+        function menos100_1() {
+            numero1 -= 100;
+            mostrar1();
         }
-        function menos100(){
-            numero = numero - 100
-            document.querySelector('p').innerText = numero
-            mostrar()
+        function mostrar1() {
+            document.querySelector('#a1').innerText = numero1;
         }
-    
+
+        function mais2() {
+            numero2++;
+            mostrar2();
+        }
+        function menos2() {
+            numero2--;
+            mostrar2();
+        }
+        function mais10_2() {
+            numero2 += 10;
+            mostrar2();
+        }
+        function menos10_2() {
+            numero2 -= 10;
+            mostrar2();
+        }
+        function mais100_2() {
+            numero2 += 100;
+            mostrar2();
+        }
+        function menos100_2() {
+            numero2 -= 100;
+            mostrar2();
+        }
+        function mostrar2() {
+            document.querySelector('#a2').innerText = numero2;
+        }
+
+        // Repetir o padrão para os outros contadores
+        function mais3() { numero3++; mostrar3(); }
+        function menos3() { numero3--; mostrar3(); }
+        function mais10_3() { numero3 += 10; mostrar3(); }
+        function menos10_3() { numero3 -= 10; mostrar3(); }
+        function mais100_3() { numero3 += 100; mostrar3(); }
+        function menos100_3() { numero3 -= 100; mostrar3(); }
+        function mostrar3() { document.querySelector('#a3').innerText = numero3; }
+
+        function mais4() { numero4++; mostrar4(); }
+        function menos4() { numero4--; mostrar4(); }
+        function mais10_4() { numero4 += 10; mostrar4(); }
+        function menos10_4() { numero4 -= 10; mostrar4(); }
+        function mais100_4() { numero4 += 100; mostrar4(); }
+        function menos100_4() { numero4 -= 100; mostrar4(); }
+        function mostrar4() { document.querySelector('#a4').innerText = numero4; }
+
+        function mais5() { numero5++; mostrar5(); }
+        function menos5() { numero5--; mostrar5(); }
+        function mais10_5() { numero5 += 10; mostrar5(); }
+        function menos10_5() { numero5 -= 10; mostrar5(); }
+        function mais100_5() { numero5 += 100; mostrar5(); }
+        function menos100_5() { numero5 -= 100; mostrar5(); }
+        function mostrar5() { document.querySelector('#a5').innerText = numero5; }
+
+        function mais6() { numero6++; mostrar6(); }
+        function menos6() { numero6--; mostrar6(); }
+        function mais10_6() { numero6 += 10; mostrar6(); }
+        function menos10_6() { numero6 -= 10; mostrar6(); }
+        function mais100_6() { numero6 += 100; mostrar6(); }
+        function menos100_6() { numero6 -= 100; mostrar6(); }
+        function mostrar6() { document.querySelector('#a6').innerText = numero6; }
+
+        function mais7() { numero7++; mostrar7(); }
+        function menos7() { numero7--; mostrar7(); }
+        function mais10_7() { numero7 += 10; mostrar7(); }
+        function menos10_7() { numero7 -= 10; mostrar7(); }
+        function mais100_7() { numero7 += 100; mostrar7(); }
+        function menos100_7() { numero7 -= 100; mostrar7(); }
+        function mostrar7() { document.querySelector('#a7').innerText = numero7; }
+
+        function mais8() { numero8++; mostrar8(); }
+        function menos8() { numero8--; mostrar8(); }
+        function mais10_8() { numero8 += 10; mostrar8(); }
+        function menos10_8() { numero8 -= 10; mostrar8(); }
+        function mais100_8() { numero8 += 100; mostrar8(); }
+        function menos100_8() { numero8 -= 100; mostrar8(); }
+        function mostrar8() { document.querySelector('#a8').innerText = numero8; }
+
+        function mais9() { numero9++; mostrar9(); }
+        function menos9() { numero9--; mostrar9(); }
+        function mais10_9() { numero9 += 10; mostrar9(); }
+        function menos10_9() { numero9 -= 10; mostrar9(); }
+        function mais100_9() { numero9 += 100; mostrar9(); }
+        function menos100_9() { numero9 -= 100; mostrar9(); }
+        function mostrar9() { document.querySelector('#a9').innerText = numero9; }
+
+        function mais10() { numero10++; mostrar10(); }
+        function menos10() { numero10--; mostrar10(); }
+        function mais10_10() { numero10 += 10; mostrar10(); }
+        function menos10_10() { numero10 -= 10; mostrar10(); }
+        function mais100_10() { numero10 += 100; mostrar10(); }
+        function menos100_10() { numero10 -= 100; mostrar10(); }
+        function mostrar10() { document.querySelector('#a10').innerText = numero10; }
     </script>
+
 </body>
 </html>
