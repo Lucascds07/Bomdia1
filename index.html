@@ -9,6 +9,7 @@
     <style>
         body{
             text-align: center;
+        
         }
     </style>
 </head>
@@ -23,7 +24,8 @@
 </button>
 <button onclick="menos10()">Menos 10</button>
 </button><br>
-<button onclick="mais100"()>Mais 100</button>
+<button onclick="mais100()">Mais 100</button>
+<button onclick="menos100()">Menos 100</button>
 <script>
     var numero = 0;
         function mais(){
@@ -51,7 +53,15 @@
         }
         function mais100(){
             numero = numero + 100
+            document.querySelector('p').innerText = numero
+            mostrar()
         }
+        function menos100(){
+            numero = numero - 100
+            document.querySelector('p').innerText = numero
+            mostrar()
+        }
+    
     </script>
 </body>
 </html>
